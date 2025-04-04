@@ -3,8 +3,8 @@ spring:
     url: jdbc:postgresql://postgres:5432/ecommerce
     #username: ${vault:secret/account-service/db_username}
     #password: ${vault:secret/account-service/db_password}
-    username: ${vault:secret/data/account-service/db_username}
-    password: ${vault:secret/data/account-service/db_password}
+    username: ${vault:data/account-service/db_username}
+    password: ${vault:data/account-service/db_password}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
