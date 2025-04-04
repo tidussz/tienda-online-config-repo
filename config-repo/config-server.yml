@@ -2,5 +2,7 @@ db:
   username: "{vault:secret/config-server/db_username}"
   password: "{vault:secret/config-server/db_password}"
 
-spring.datasource.username: "{vault:secret/data/config-server/db_username}"
-spring.datasource.password: "{vault:secret/data/config-server/db_password}"
+spring:
+  datasource:
+    username: "{vault:secret/data/config-server/db_username}"
+    password: "{vault:secret/data/config-server/db_password}"
