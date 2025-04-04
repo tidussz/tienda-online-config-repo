@@ -1,0 +1,3 @@
+db:
+  username: "{vault:secret/config-server/db_username}"
+  password: "{vault:secret/config-server/db_password}"
